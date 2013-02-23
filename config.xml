@@ -21,30 +21,30 @@
     <preference name="fullscreen"       value="true" />
 
     <icon src="logon1.jpg" />
-    <icon src="img/logon1.jpg"   gap:platform="android"    gap:density="ldpi" />
-    <icon src="img/logon1.jpg"   gap:platform="android"    gap:density="mdpi" />
-    <icon src="img/logon1.jpg"   gap:platform="android"    gap:density="hdpi" />
+    <icon src="img/logon1.jpg"  gap:platform="android"    gap:density="ldpi" />
+    <icon src="img/logon1.jpg"  gap:platform="android"    gap:density="mdpi" />
+    <icon src="img/logon1.jpg"  gap:platform="android"    gap:density="hdpi" />
     <icon src="img/logon1.jpg"  gap:platform="android"    gap:density="xhdpi" />
-    <icon src="img/logon1.jpg"     gap:platform="blackberry" />
-    <icon src="img/logon1.jpg"     gap:platform="blackberry" gap:state="hover"/>
-    <icon src="img/logon1.jpg"            gap:platform="ios"        width="57" height="57" />
-    <icon src="img/logon1.jpg"            gap:platform="ios"        width="72" height="72" />
-    <icon src="img/logon1.jpg"         gap:platform="ios"        width="114" height="114" />
-    <icon src="img/logon1.jpg"         gap:platform="ios"        width="144" height="144" />
-    <icon src="img/logon1.jpg"          gap:platform="webos" />
+    <icon src="img/logon1.jpg"  gap:platform="blackberry" />
+    <icon src="img/logon1.jpg"  gap:platform="blackberry" gap:state="hover"/>
+    <icon src="img/logon1.jpg"  gap:platform="ios"        width="57" height="57" />
+    <icon src="img/logon1.jpg"  gap:platform="ios"        width="72" height="72" />
+    <icon src="img/logon1.jpg"  gap:platform="ios"        width="114" height="114" />
+    <icon src="img/logon1.jpg"  gap:platform="ios"        width="144" height="144" />
+    <icon src="img/logon1.jpg"  gap:platform="webos" />
     <icon src="img/logon1.jpg"  gap:platform="winphone" />
-    <icon src="img/logon1.jpg" gap:platform="winphone"   gap:role="background" />
+    <icon src="img/logon1.jpg"  gap:platform="winphone"   gap:role="background" />
 
     <gap:splash src="img/fondo.jpg"  gap:platform="android" gap:density="ldpi" />
     <gap:splash src="img/fondo.jpg"  gap:platform="android" gap:density="mdpi" />
     <gap:splash src="img/fondo.jpg"  gap:platform="android" gap:density="hdpi" />
-    <gap:splash src="img/fondo.jpg" gap:platform="android" gap:density="xhdpi" />
-    <gap:splash src="img/fondo.jpg"         gap:platform="blackberry" />
-    <gap:splash src="img/fondo.jpg"    gap:platform="ios"     width="320" height="480" />
-    <gap:splash src="img/fondo.jpg" gap:platform="ios"     width="640" height="960" />
-    <gap:splash src="img/fondo.jpg"      gap:platform="ios"     width="768" height="1024" />
-    <gap:splash src="img/fondo.jpg"     gap:platform="ios"     width="1024" height="768" />
-    <gap:splash src="img/fondo.jpg" gap:platform="winphone" />
+    <gap:splash src="img/fondo.jpg"  gap:platform="android" gap:density="xhdpi" />
+    <gap:splash src="img/fondo.jpg"  gap:platform="blackberry" />
+    <gap:splash src="img/fondo.jpg"  gap:platform="ios"     width="320" height="480" />
+    <gap:splash src="img/fondo.jpg"  gap:platform="ios"     width="640" height="960" />
+    <gap:splash src="img/fondo.jpg"  gap:platform="ios"     width="768" height="1024" />
+    <gap:splash src="img/fondo.jpg"  gap:platform="ios"     width="1024" height="768" />
+    <gap:splash src="img/fondo.jpg"  gap:platform="winphone" />
 	
 	<access origin="*" subdomains="true" />
 </widget>
