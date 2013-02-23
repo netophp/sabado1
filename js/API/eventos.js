@@ -18,10 +18,10 @@ $(document).ready(function(e) {
 			  var email=$('#regMail').val();
 			  var tel=$('#regTel').val();
 			  
-			  bgAlert('Valores Nombre: ',name+' \n Lugar: '+lug+'\n Correo electrónico: '+email+' \nTeléfono: '+tel);
+			  pgAlert('Valores Nombre: ',name+' \n Lugar: '+lug+'\n Correo electrónico: '+email+' \nTeléfono: '+tel);
 			  logSend(name,lug,email,tel);
 			  } else{
-				  bgAlert("Error",'Todos los campos son requeridos');
+				  pgAlert("Error",'Todos los campos son requeridos');
 				  }
 	  });
 	
