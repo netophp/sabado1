@@ -1,9 +1,10 @@
 // JavaScript Document
 // Eventos
 $(document).ready(function(e) {
-  //$('div').remove();  //metodo  objeto.metodo
-  //alert('Bienvenido al Curso');
-  if (!isLogin()) // Verifica si ya acceso a login
+	document.addEventListener("deviceready",function () { // escuchar el evento click
+	
+	
+	 if (!isLogin()) // Verifica si ya acceso a login
   		window.location.href = "#login";
   //$('#login').  //Se manda a llamar al div login
   
@@ -17,11 +18,27 @@ $(document).ready(function(e) {
 			  var email=$('#regMail').val();
 			  var tel=$('#regTel').val();
 			  
-			  alert('Nombre: '+name+' \n Lugar: '+lug+'\n Correo electrónico: '+email+' \nTeléfono: '+tel);
+			  bgAlert('Valores Nombre: ',name+' \n Lugar: '+lug+'\n Correo electrónico: '+email+' \nTeléfono: '+tel);
 			  } else{
-				  alert('Todos los campos son requeridos');
+				  bgAlert("Error",'Todos los campos son requeridos');
 				  }
 	  });
+	
+	     //otros eventos de phonegaph
+		 /*
+		 document.addEventListener("pause",function() {},false); //pausar la aplicación
+		 document.addEventListener("resume",function() {},false); //continuar con la aplicación
+		 document.addEventListener("online",function() {},false); //capturar el evento en linea
+		 document.addEventListener("offline",function() {},false); //capturar eveto cuando se desconecta
+		 */
+		 
+		
+		},false); //captura eventos en javascript, se puede crear la función en lugar de isLogin
+	
+	
+  //$('div').remove();  //metodo  objeto.metodo
+  //alert('Bienvenido al Curso');
+ 
   
   
 });
