@@ -8,7 +8,8 @@ $(document).ready(function(e) {
   		window.location.href = "#login";
   //$('#login').  //Se manda a llamar al div login
   $("#regFoto").tap(function(){
-	pgAlert('Captura imagen',capturaImg());    
+	//pgAlert('Captura imagen',capturaImg()); 
+	capturaImg();   
   });
   
   //Funcionalidad Login
