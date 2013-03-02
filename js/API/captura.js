@@ -16,7 +16,7 @@ var captureError = function(error) {
 };
 
 // start image capture
-navigator.device.capture.captureImage(captureSuccess, captureError, {limit:2});
+navigator.device.capture.captureImage(captureSuccess, captureError, {limit:1});
 
 
 
