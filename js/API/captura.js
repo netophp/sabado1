@@ -9,21 +9,24 @@ var captureSuccess = function(mediaFiles) {
         // do something interesting with the file
 		return ruta;
 };*/
-
+/*
 // capture error callback
 var captureError = function(error) {
     navigator.notification.alert('Error code: ' + error.code, null, 'Capture Error');
 };
 
-// start image capture
+// start image capture*/
+
+
 navigator.device.capture.captureImage(function(mediaFiles) {
-    var ruta;
+	var ruta="";
         ruta = mediaFiles[0].fullPath;
-        // do something interesting with the file
-		return ruta;
-}, captureError, {limit:1});
+
+}, function(error) {
+    navigator.notification.alert('Código de error: ' + error.code);
+}, {limit:1});
 
 
 
-//return ruta;
+return ruta;
 }
