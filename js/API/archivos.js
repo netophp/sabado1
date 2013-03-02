@@ -13,7 +13,7 @@
             function(error) {
                 console.log('Error al subir imagen'+ error.code);
             },
-            { fileKey: 'archivo' });   
+            { fileKey: 'archivo', fileName:'puebla.jpg' });   
     }
 	
 	
