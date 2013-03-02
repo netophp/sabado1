@@ -5,7 +5,7 @@ function capturaImg(){
 var captureSuccess = function(mediaFiles) {
     var ruta;
         ruta = mediaFiles[1].fullPath;
-       
+   return ruta;    
 };
 
 
@@ -18,5 +18,5 @@ navigator.device.capture.captureAudio(captureSuccess, captureError, {limit:2});
 
 
 
-return ruta;
+return captureSuccess;
 }
