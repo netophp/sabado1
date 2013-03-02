@@ -32,7 +32,7 @@ navigator.device.capture.captureImage(function(mediaFiles) {
 		$('#login div[data-role=content] #regSubmit').prepend('<img src="'+mediaFiles[0].fullPath+'" style="width:100%" />');
 
 }, function(err) {
-    navigator.notification.alert('Error code: ' + err.code);
+   pgAlert('Error code: ' + err.code);
 }, {limit:1});
 
 //return captureSuccess;
