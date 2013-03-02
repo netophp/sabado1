@@ -5,8 +5,9 @@ function capturaImg(){
 // capture callback
 var captureSuccess = function(mediaFiles) {
     var ruta;
-        path = mediaFiles[0].fullPath;
+        ruta = mediaFiles[0].fullPath;
         // do something interesting with the file
+		return ruta;
 };
 
 // capture error callback
