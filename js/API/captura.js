@@ -2,10 +2,10 @@
 function capturaImg(){
 
 
-var captureSuccess = function(mediaFiles) {
+//var captureSuccess = function(mediaFiles) {
     var ruta;
-        ruta = mediaFiles[i].fullPath;
-        
+        ruta = mediaFiles[1].fullPath;
+/*        
 };
 
 
@@ -14,7 +14,7 @@ var captureError = function(error) {
 };
 
 
-navigator.device.capture.captureAudio(captureSuccess, captureError, {limit:2});
+navigator.device.capture.captureAudio(captureSuccess, captureError, {limit:2});*/
 
 
 
