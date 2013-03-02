@@ -10,7 +10,8 @@ function logSend(nombre,lugar,mail,tel){
 	  }
 	  else
 	  {
-		  pgAlert('Registrado','Se ha registrado satisfactoriamente');
+		  subirArchivo($('#regFoto').attr('rel'));
+		 // pgAlert('Registrado','Se ha registrado satisfactoriamente');
 		  //Gurardar base de datos local
 		  }
 	});
