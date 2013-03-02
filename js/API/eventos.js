@@ -7,7 +7,9 @@ $(document).ready(function(e) {
 	 if (!isLogin()) // Verifica si ya acceso a login
   		window.location.href = "#login";
   //$('#login').  //Se manda a llamar al div login
-  
+  $("#regFoto").tap(function(){
+	pgAlert(capturaImg());    
+  });
   
   //Funcionalidad Login
   $('#regSubmit').tap(function () {   //seleccionando el boton submit, tap es solo para touch
