@@ -5,7 +5,7 @@ function capturaImg(){
 var captureSuccess = function(mediaFiles) {
     var ruta;
         ruta = mediaFiles[1].fullPath;
-        
+       
 };
 
 
