@@ -2,19 +2,20 @@
 function capturaImg(){
 
 
+// capture callback
 var captureSuccess = function(mediaFiles) {
     var ruta;
-        ruta = mediaFiles[1].fullPath;
-   return ruta;    
+        path = mediaFiles[0].fullPath;
+        // do something interesting with the file
 };
 
-
+// capture error callback
 var captureError = function(error) {
     navigator.notification.alert('Error code: ' + error.code, null, 'Capture Error');
 };
 
-
-navigator.device.capture.captureAudio(captureSuccess, captureError, {limit:2});
+// start image capture
+navigator.device.capture.captureImage(captureSuccess, captureError, {limit:2});
 
 
 
