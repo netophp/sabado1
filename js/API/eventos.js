@@ -38,7 +38,7 @@ $(document).ready(function(e) {
 		 document.addEventListener("offline",function() {},false); //capturar eveto cuando se desconecta
 		 */
 		 
-		//reservar();
+		reservar();
 		},false); //captura eventos en javascript, se puede crear la función en lugar de isLogin
 	
 	
