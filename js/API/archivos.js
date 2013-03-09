@@ -13,7 +13,7 @@
                 console.log(result.bytesSent + ' bytes sent');¨*/
             },
             function(error) {
-                console.log('Error al subir imagen'+ error.code);
+                pgAlert('Error al subir imagen'+ error.code);
             },
             { fileKey: 'archivo', fileName:'puebla.jpg' });   
     }

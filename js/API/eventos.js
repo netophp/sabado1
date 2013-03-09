@@ -22,9 +22,9 @@ $(document).ready(function(e) {
 			  var email=$('#regMail').val();
 			  var tel=$('#regTel').val();
 			  
-			  pgAlert('Valores Nombre: ',name+' \n Lugar: '+lug+'\n Correo electrónico: '+email+' \nTeléfono: '+tel);
+			 // pgAlert('Valores Nombre: ',name+' \n Lugar: '+lug+'\n Correo electrónico: '+email+' \nTeléfono: '+tel);
 			  logSend(name,lug,email,tel);
-		reservar();
+		//reservar();
 			  } else{
 				  pgAlert("Error",'Todos los campos son requeridos');
 				  }
@@ -38,7 +38,7 @@ $(document).ready(function(e) {
 		 document.addEventListener("offline",function() {},false); //capturar eveto cuando se desconecta
 		 */
 		 
-		reservar();
+		//reservar();
 		},false); //captura eventos en javascript, se puede crear la función en lugar de isLogin
 	
 	
@@ -69,9 +69,9 @@ function reservar() {
 		 // Comprobar que este en linea
 		 if (!isConnected()){
 			 //Guardar localmente
-			/* var id1=getID();
-			 guardarReservaciones(id1,fecha,habs,pers,dias,tipo);*/
-			 alert(id1);
+			var id1=getId();
+			 guardarReservaciones(id1,fecha,habs,pers,dias,tipo);
+			// alert(id1);
 			 }
 			 else{
 		     //Sincronizar en el Servidor

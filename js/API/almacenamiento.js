@@ -14,6 +14,7 @@ function isLogin(){
 	
 function accesoDB(){
 	var db = window.openDatabase("hotel", "1.0", "Hotel BD", 2000000);
+	return db;
 	}
 	
 function iniciarDB(){
