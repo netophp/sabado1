@@ -47,7 +47,7 @@ function getID(){
 	
 function guardarReservaciones(id,fecha,habs,pers,dias,tipo){
 	accesoDB().transaction(  function (tx) {
-		 tx.executeSql('INSERT INTO reservas (rId, fecha, habitaciones, personas, dias, tipo) values (id,fecha,habs,pers,dias,tipo);');
+		 tx.executeSql('INSERT INTO reservas (rId, fecha, habitaciones, personas, dias, tipo) values (id,fecha,habs,pers,dias,tipo)');
 		// tx.executeSql('INSERT INTO hstorial (hId, fecha, habitaciones, personas, dias, tipo) values (id,habs,pers,dias);');
 	}, 	function (err) {
 		pgAlert("Error en la base de datos: "+err.code);
