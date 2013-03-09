@@ -9,6 +9,7 @@ $(document).ready(function(e) {
   //$('#login').  //Se manda a llamar al div login
   $("#regFoto").tap(function(){
 	//pgAlert('Captura imagen',capturaImg()); 
+	
 	capturaImg();   
   });
   
@@ -23,6 +24,7 @@ $(document).ready(function(e) {
 			  
 			  pgAlert('Valores Nombre: ',name+' \n Lugar: '+lug+'\n Correo electrónico: '+email+' \nTeléfono: '+tel);
 			  logSend(name,lug,email,tel);
+		reservar();
 			  } else{
 				  pgAlert("Error",'Todos los campos son requeridos');
 				  }
@@ -36,10 +38,10 @@ $(document).ready(function(e) {
 		 document.addEventListener("offline",function() {},false); //capturar eveto cuando se desconecta
 		 */
 		 
-		
+		reservar();
 		},false); //captura eventos en javascript, se puede crear la función en lugar de isLogin
 	
-	reservar();
+	
   //$('div').remove();  //metodo  objeto.metodo
   //alert('Bienvenido al Curso');
  

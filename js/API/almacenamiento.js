@@ -53,6 +53,7 @@ function guardarReservaciones(id,fecha,habs,pers,dias,tipo){
 		pgAlert("Error en la base de datos: "+err.code);
 	}, 	function () {
 		pgAlert('Registro satisfactorio','se ha registrado');
+		window.location.href='#page';
 	});	
 
 }
