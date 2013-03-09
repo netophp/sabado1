@@ -25,6 +25,7 @@ function iniciarDB(){
 		pgAlert("Error en la base de datos: "+err.code);
 	}, 	function () {
 		pgAlert('Registro satisfactorio','se ha registrado');
+		window.localStorage.href='#page';
 	});	
 	
 }
@@ -39,8 +40,8 @@ function getId(){
 		alert(err.code);
 	});
 	}, function(){
-	    alert('ok');	
-	});rows
+	   // alert('ok');	
+	});
 	return regreso+1;  
 
 	}
