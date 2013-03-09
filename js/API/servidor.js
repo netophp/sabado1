@@ -4,7 +4,7 @@ function logSend(nombre,lugar,mail,tel){
 	$.ajax({
 	  type: "POST",
 	  url: "http://187.157.167.134/neto/pgtest.php",
-	  data: 'nom='+nombre+'&lug='+lugar+'&mail='+mail+'&tel='+tel+"&uuid="+dispositivo()['id']
+	  data: 'nom='+nombre+'&lug='+lugar+'&mail='+mail+'&tel='+tel+"&uuid="+disp['id']
 	}).done(function(msg) {
 	  if (msg=='0'){
 		  pgAlert('Error','Hubo un error al enviar datos');

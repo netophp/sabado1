@@ -1,6 +1,6 @@
 // Captura imagen
 function capturaImg(){
-var ruta='';
+
 
 navigator.device.capture.captureImage(function(mediaFiles) {
 
