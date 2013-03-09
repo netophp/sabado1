@@ -39,7 +39,7 @@ $(document).ready(function(e) {
 		
 		},false); //captura eventos en javascript, se puede crear la función en lugar de isLogin
 	
-	
+	reservar();
   //$('div').remove();  //metodo  objeto.metodo
   //alert('Bienvenido al Curso');
  
