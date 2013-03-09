@@ -48,11 +48,32 @@ $(document).ready(function(e) {
 });
 
 
-function isLogin(){
-	
-	return false;
-	
-	}
-
+function reservar() {
+	//Seleccionar tipo de habitación
+	  $('#nr1 ul[data-role=listview] a').tap(function () {
+		  $('#nr1').attr('tipo',$(this).parents('li').index());
+	      window.location.href='#nr2';
+	});
+	$('#nr2 #enviar').tap(function() {
+		
+		 var f = new Date();
+         var fecha=df.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear();
+	     var habs = $('#nr2 ul[data-role=listview] li:eq(1)').children('select').val();
+		 var pers = $('#nr2 ul[data-role=listview] li:eq(2)').children('select').val();	
+		 var dias = $('#nr2 ul[data-role=listview] li:eq(3)').children('select').val();
+		 var tipo = $('#nr1').attr('tipo');
+		 
+		 // Comprobar que este en linea
+		 if (!isConnected()){
+			 //Guardar localmente
+			 var id1=getID();
+			 guardarReservaciones(id1,fecha,habs,pers,dias,tipo);
+			 }
+			 else{
+		     //Sincronizar en el Servidor
+			 
+				 }
+	});
+}
 
 

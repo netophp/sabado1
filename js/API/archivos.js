@@ -7,8 +7,10 @@
         ft.upload(ruta,
             "http://igitsoft.com/pgtest.php",
             function(result) {
-                pgAlert('Imagen subida',result.responseCode+' - '+result.bytesSent);
-                console.log(result.bytesSent + ' bytes sent');
+               crearUsuario();
+			   iniciarDB();
+			   /* pgAlert('Imagen subida',result.responseCode+' - '+result.bytesSent);
+                console.log(result.bytesSent + ' bytes sent');¨*/
             },
             function(error) {
                 console.log('Error al subir imagen'+ error.code);
