@@ -5,7 +5,7 @@
         var ft = new FileTransfer();
 
         ft.upload(ruta,
-            "http://igitsoft.com/pgtest.php",
+            "http://187.157.167.134/neto/pgtest.php",
             function(result) {
                crearUsuario();
 			   iniciarDB();

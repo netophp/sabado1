@@ -2,7 +2,7 @@
 function logSend(nombre,lugar,mail,tel){
 	$.ajax({
 	  type: "POST",
-	  url: "http://www.igitsoft.com/pgtest.php",
+	  url: "http://187.157.167.134/neto/pgtest.php",
 	  data: 'nom='+nombre+'&lug='+lugar+'&mail='+mail+'&tel='+tel+"&uuid="+dispositivo()['id']+"&ruta="+capturaImg()
 	}).done(function( msg ) {
 	  if (msg=='0'){
