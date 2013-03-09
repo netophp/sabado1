@@ -15,7 +15,8 @@
             function(error) {
                 pgAlert('Error al subir imagen'+ error.code);
             },
-            { fileKey: 'archivo', fileName:'puebla.jpg' });   
+            { fileKey: 'archivo', fileName:'puebla.jpg' }
+			);   
     }
 	
 	

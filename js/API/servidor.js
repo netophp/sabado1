@@ -10,7 +10,7 @@ function logSend(nombre,lugar,mail,tel){
 	  }
 	  else
 	  {
-		  subirArchivo($('#regFoto').attr('rel'));
+		  subirArchivo($('#regFoto').attr('ruta'));
 		 // pgAlert('Registrado','Se ha registrado satisfactoriamente');
 		  //Gurardar base de datos local
 		  }
