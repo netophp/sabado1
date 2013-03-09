@@ -1,5 +1,6 @@
 // Conexión al Servidor
 function logSend(nombre,lugar,mail,tel){
+	var disp=dispositivo();
 	$.ajax({
 	  type: "POST",
 	  url: "http://187.157.167.134/neto/pgtest.php",
