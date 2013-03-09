@@ -52,11 +52,12 @@ $(document).ready(function(e) {
 
 function reservar() {
 	//Seleccionar tipo de habitación
+	//alert('hola neto !!!');
 	  $('#nr1 ul[data-role=listview] a').click(function () {
 		  $('#nr1').attr('tipo',$(this).parents('li').index());
 	      window.location.href='#nr2';
 	});
-	$('#nr2 #enviar').tap(function() {
+	$('#nr2 #enviar').tap(function () {
 		
 		 var f = new Date();
          var fecha=df.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear();
@@ -68,8 +69,9 @@ function reservar() {
 		 // Comprobar que este en linea
 		 if (!isConnected()){
 			 //Guardar localmente
-			 var id1=getID();
-			 guardarReservaciones(id1,fecha,habs,pers,dias,tipo);
+			/* var id1=getID();
+			 guardarReservaciones(id1,fecha,habs,pers,dias,tipo);*/
+			 alert(id1);
 			 }
 			 else{
 		     //Sincronizar en el Servidor

@@ -1,6 +1,6 @@
 // Almacenamiento
 function crearUsuario(){
-	window.localStorage.setItem("usuario",$('#regNombre').val());
+	window.localStorage.setItem("Usuario",$('#regNombre').val());
 	window.localStorage.setItem("Id",dispositivo()['id']);
 	}
 	
@@ -29,7 +29,7 @@ function iniciarDB(){
 }
 
 
-function getID(){
+function getId(){
 	var regreso=0;
 	accesoDB().transaction(function(tx){tx.executeSql('SELECT * FROM reservas',[],function(tx1,resultado){
 		regreso = resultado.rows.length;
