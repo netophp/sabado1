@@ -1,7 +1,7 @@
 // Disposito
 //var arr=new array();
 //var arr=(1,2,3,4,5);
-function dispositio(){
+function dispositivo(){
 var disp=[];
 disp['name']=device.name;
 disp['phonegap']=device.cordova;
