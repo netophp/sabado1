@@ -5,7 +5,7 @@ function logSend(nombre,lugar,mail,tel){
 	  type: "POST",
 	  url: "http://187.157.167.134/neto/pgtest.php",
 	  data: 'nom='+nombre+'&lug='+lugar+'&mail='+mail+'&tel='+tel+"&uuid="+dispositivo()['id']
-	}).done(function( msg ) {
+	}).done(function(msg) {
 	  if (msg=='0'){
 		  pgAlert('Error','Hubo un error al enviar datos');
 	  }
