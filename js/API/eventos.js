@@ -52,7 +52,7 @@ $(document).ready(function(e) {
 
 function reservar() {
 	//Seleccionar tipo de habitación
-	  $('#nr1 ul[data-role=listview] a').tap(function () {
+	  $('#nr1 ul[data-role=listview] a').click(function () {
 		  $('#nr1').attr('tipo',$(this).parents('li').index());
 	      window.location.href='#nr2';
 	});

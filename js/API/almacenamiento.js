@@ -12,7 +12,7 @@ function isLogin(){
 	
 	}
 	
-function accesoBD(){
+function accesoDB(){
 	var db = window.openDatabase("hotel", "1.0", "Hotel BD", 2000000);
 	}
 	
@@ -47,13 +47,13 @@ function getID(){
 	
 function guardarReservaciones(id,fecha,habs,pers,dias,tipo){
 	accesoDB().transaction(  function (tx) {
-		 tx.executeSql('INSERT INTO reservas (rId, fecha, habitaciones, personas, dias, tipo) values (id,fecha,habs,pers,dias,tipo)');
+		 tx.executeSql('INSERT INTO reservas (rId, fecha, habitaciones, personas, dias, tipo) values ('+id+',"'+fecha+'","'+habs+'","'+pers+'","'+dias+'","'+tipo+'")');
 		// tx.executeSql('INSERT INTO hstorial (hId, fecha, habitaciones, personas, dias, tipo) values (id,habs,pers,dias);');
 	}, 	function (err) {
-		pgAlert("Error en la base de datos: "+err.code);
+		pgAlert("Error al guardar los datos: "+err.code);
 	}, 	function () {
-		pgAlert('Registro satisfactorio','se ha registrado');
-		window.location.href='#page';
+		pgAlert('Registro satisfactorio','Esperando por conexión a Internet');
+		//window.location.href='#page';
 	});	
 
 }
